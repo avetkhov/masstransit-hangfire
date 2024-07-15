@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>AV.MasstransitHangfire.CentralServer.Api</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit.Newtonsoft" Version="8.2.3" />
+        <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AV.MasstransitHangfire.Common\AV.MasstransitHangfire.Common.csproj" />
+      <ProjectReference Include="..\AV.MasstransitHangfire.Models\AV.MasstransitHangfire.Models.csproj" />
+    </ItemGroup>
+
+</Project>
